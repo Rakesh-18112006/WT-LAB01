@@ -10,8 +10,8 @@ tr , th, td {
 }   
 
 th {
-    background-color: #f2f2f2;
+    background-color: #b4a8a8;
 }
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #ad1b1b;
 }
