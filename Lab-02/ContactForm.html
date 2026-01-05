@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Contact Form Example</title>
+    <style>
+      * {
+        background-image: url(123.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      form {
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        background-color: cornflowerblue;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: -15px;
+      }
+      input[type="submit"] {
+        background-color: #08c5ff;
+        color: rgb(0, 0, 0);
+        padding: 15px 100px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: justify;
+        font-family: cursive;
+        z-index: 100;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      label {
+        font-weight: bold;
+        font-size: large;
+      }
+      h1 {
+        font-family: cursive;
+      }
+      :placeholder-shown {
+        font-size: medium;
+        font-family: cursive;
+        color: darkblue;
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-left: 500px; margin-top: 50px">
+      <h1>Contact us</h1>
+      <form action="AiToolsLandingPage.html">
+        <label for="name">Name:</label>
+        <br /><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="enter your name"
+          required
+        />
+        <br /><br />
+        <label for="email">Email:</label>
+        <br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="enter your email"
+          required
+        />
+        <br /><br />
+        <label for="message">Message:</label>
+        <br /><br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="enter your query"
+          required
+        ></textarea>
+        <br /><br />
+        <input
+          type="submit"
+          value="Submit"
+          color="black"
+          onclick="alert('form submitted successfully')"
+        />
+      </form>
+    </div>
+  </body>
+</html>

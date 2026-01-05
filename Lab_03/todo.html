@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div style="
+        background-image: url(https://img.freepik.com/free-vector/abstract-background-design_1107-155.jpg?semt=ais_hybrid&w=740&q=80);
+        background-size: cover;
+        height: 200vh;
+        background-position: center;">
+        <h1 style=
+        "color: white;
+        text-align: center;
+        padding-top: 40px;  
+        ">
+        Welcome to the ToDo List Web App
+    </h1>   
+        <section id="todosection">
+            <input type="text" id="taskInput" placeholder="Enter your task here" />
+            <input type="date" id="dateInput" />
+            <input type="time" id="timeInput" />
+            <input type="text" id="priorityInput" placeholder="Enter priority (e.g., High, Medium, Low)" />
+            <button onclick="saveTodo(event)" id="addButton">Add</button>
+        </section>
+
+        <button onclick="showTodos()" id="showButton">Your Tasks</button>
+        <section id="taskList">           
+        </section>
+    </div>
+  </body>
+  <script src="todo.js"></script>
+</html>

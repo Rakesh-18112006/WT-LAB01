@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+#todosection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+}
+
+#todosection input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+#todosection input:focus{
+    outline: none;
+    border-color: #81b1e7;
+    
+}
+
+#todosection ::placeholder{
+    color: white;;
+}
+
+#todosection button{
+    width: 100px;
+    height: 35px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#todosection button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+#showButton{
+    width:150px;
+    height: 35px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#showButton:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+ #taskList{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+   
+   
+ 
+}
+
+.todoItem{
+    width: 350px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(253, 251, 251, 0.1);
+    box-shadow: 20px 20px 40px #d9d9d9,
+                -20px -20px 40px #ffffff;
+
+}
