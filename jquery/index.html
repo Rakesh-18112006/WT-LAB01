@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <h1>jQuery Example</h1>
+    <button id="button1">Increase size</button>
+    <button id="myButton">Click Me</button>
+    <p id="myParagraph">Hello, World!</p>
+
+</body>
+<script>
+    $(document).ready(function() {
+
+        $('#myButton').click(function() {
+            $('#myParagraph').text('Button Clicked!');
+        });
+
+        $('h1').css('color' , 'blue');
+
+        $('#button1').click(function() {
+          var currentmode = $('#button1').text();
+
+            if (currentmode === 'Increase size') {
+                 $('#button1').text('Decrease size');       
+            } else {
+                $('#button1').text('Increase size');
+            }
+           if (currentmode === 'Decrease size') {
+                $('h1').css('font-size', '32px');
+            } else {
+                $('h1').css('font-size', '100px');
+            }
+        });
+    });
+</script>
+</html>
