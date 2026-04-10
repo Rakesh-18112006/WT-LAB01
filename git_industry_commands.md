@@ -1,3 +1,5 @@
+total git commands 
+
 1. Git Configuration Commands
 
 1.1command name : `git config --global user.name`

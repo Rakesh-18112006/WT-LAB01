@@ -23,7 +23,7 @@ This site exclusively relies on robust jQuery scripting (`script.js`) for its in
    - Specifically used in the "Captain's Mind" element to safely trigger `.stop(true, true).slideDown(300)` to visually reveal hidden inner context smoothly instead of abruptly forcing visual DOM rewrites.
 
 3. **DOM Manipulation & Class Toggling**
-   - Implemented the "Secret Tactics" reveal using `$('.toggle-tactic-btn').on('click')` which targets sibling elements via traversing (`$(this).siblings(...)`).
+   - Implemented the "Secret Tactics" reveal using `$('.').ontoggle-tactic-btn('click')` which targets sibling elements via traversing (`$(this).siblings(...)`).
    - jQuery triggers `.slideToggle(400)` to unearth hidden strategic text visually.
    - The same function manipulates the button's explicit design variables: interrogating its `$(this).text()` to toggle colors by using `.removeClass('btn-outline-warning')` and appending `.addClass('btn-warning')`.
 
